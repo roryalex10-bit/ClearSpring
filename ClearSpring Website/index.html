@@ -63,8 +63,6 @@
   .btn-primary:hover { background: var(--green-dark); }
   .btn-quiet { background: transparent; color: var(--ink); border-color: var(--line); }
   .btn-quiet:hover { border-color: var(--green); color: var(--green); }
-  .btn-leaf { background: var(--leaf); color: #173404; }
-  .btn-leaf:hover { background: #A9D16E; }
   .btn-small { padding: 11px 20px; font-size: 15px; }
 
   /* Header */
@@ -277,24 +275,8 @@
   .includes svg { flex: none; color: var(--green); margin-top: 4px; }
   .price-panel .btn { width: 100%; }
 
-  /* Closing call to action */
-  .closing {
-    background: var(--ink);
-    color: #EAF3DE;
-    padding: clamp(80px, 11vw, 136px) 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .closing-rings { position: absolute; right: -180px; top: 50%; width: 620px; transform: translateY(-50%); color: var(--leaf); opacity: .18; pointer-events: none; }
-  .closing .wrap { position: relative; }
-  .closing h2 {
-    font: 400 clamp(2.25rem, 4.6vw, 3.5rem)/1.08 var(--serif);
-    letter-spacing: -0.02em;
-    max-width: 14ch;
-  }
-  .closing p { color: #B7D3C6; max-width: 30em; margin: 24px 0 40px; font-size: 18px; }
-
   /* Contact */
+  #contact { border-top: 1px solid var(--line); }
   .contact-grid {
     display: grid;
     grid-template-columns: 5fr 7fr;
@@ -337,12 +319,11 @@
     .spring { order: -1; max-width: 220px; justify-self: start; }
     .principles { grid-template-columns: 1fr; }
     .portrait { max-width: 360px; }
-    .closing-rings { right: -300px; opacity: .12; }
   }
   @media (max-width: 520px) {
     .steps, .form-row { grid-template-columns: 1fr; }
     .hero-actions .btn { width: 100%; }
-    .closing .btn, .contact-form .btn { width: 100%; }
+    .contact-form .btn { width: 100%; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -503,16 +484,6 @@
     </div>
   </section>
 
-  <section class="closing">
-    <svg class="closing-rings" viewBox="0 0 500 500" fill="none" stroke="currentColor" aria-hidden="true">
-      <circle cx="250" cy="250" r="50" stroke-width="2"/><circle cx="250" cy="250" r="100" stroke-width="2"/><circle cx="250" cy="250" r="150" stroke-width="2"/><circle cx="250" cy="250" r="200" stroke-width="2"/><circle cx="250" cy="250" r="248" stroke-width="2"/>
-    </svg>
-    <div class="wrap">
-      <h2>Ready to meet your sage self?</h2>
-      <p>Start with the free saboteur assessment. Five minutes to see what's really running the show.</p>
-      <button class="btn btn-leaf" type="button">Take the free assessment</button>
-    </div>
-  </section>
 
   <section class="section" id="contact">
     <div class="wrap contact-grid">
